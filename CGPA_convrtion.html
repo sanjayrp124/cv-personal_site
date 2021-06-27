@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CGPA Converter</title>
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+  
+<div class="bg">
+    <img src="vtu-logo.png" alt="vtu-logo">
+</div>
+    
+       <div class="heading">    <h1>CGPA Converter📟</h1> 
+       </div>
+       
+    <div class="style">
+        <h2>For VTU Student.<br/>
+            Convert your CGPA into percentage  as per VTU standards.</h2><br>
+    </div>
+
+    <div class="cal">
+    
+        <input type="float" id="id1"  placeholder="Enter Your CGPA Here">
+    
+        <button  class="but" onclick="calculate()">Calculate</button>
+
+    </div>
+
+
+    <div id="div1"></div>
+
+    <div class="footer">🌎english &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      copyright@2021 &nbsp;&nbsp;&nbsp;   sanjay patil </div>
+    
+
+
+  
+
+   
+    
+    <script>
+        function calculate(){
+            var cgpa=parseFloat(document.getElementById("id1").value);
+
+            var a = (cgpa-0.75)
+            var per=a*10;
+            document.getElementById("div1").innerHTML="Your percentage is "+per;
+        }
+    </script>
+</body>
+</html>
